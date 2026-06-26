@@ -11,3 +11,12 @@ export interface Conversation {
 
 }
 
+export interface Message {
+  id: string;
+
+  sender: "customer" | "agent" | "ai";
+
+  text: string;
+
+  timestamp: string;
+}
