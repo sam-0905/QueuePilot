@@ -26,7 +26,7 @@ timestamp: "2023-06-01T10:00:00Z"
 id: "2",
 customerName: "Jane Smith",
 priority: "Medium",
-status: "Open",
+status: "Closed",
 waitingTime: 3,
 escalationReason: "Customer has been waiting for more than 3 minutes",
 aiSummary: "Customer is asking about shipment status.",
