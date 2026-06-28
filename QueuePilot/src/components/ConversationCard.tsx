@@ -7,15 +7,17 @@ interface ConversationCardProps {
 const ConversationCard = ({ conversation }: ConversationCardProps) => {
   return (
     <>
-    <h1>Conversation Card</h1>
     {
-                <div key={conversation.id}>
-                    <h2>{conversation.customerName}</h2>
-                    <h2>{conversation.status}</h2>
-                    <h3>{conversation.priority}</h3>
-                    <h4>{conversation.waitingTime}</h4>
-                    <p>{conversation.escalationReason}</p>
-                    <p>{conversation.aiSummary}</p>
+                <div key={conversation.id} className="flex m-2 p-3 justify-center items-center">
+                      <h1 className="text-xl font-bold">Conversation Card</h1>
+                    <div className="flex flex-col m-2 p-4 bg-blue-500 rounded-lg shadow-md ">
+                    <h2 className="text-lg font-semibold">{conversation.customerName}</h2>
+                    <h2 className="text-md">{conversation.status}</h2>
+                    <h3 className="text-sm">{conversation.priority}</h3>
+                    <h4 className="text-xs">{conversation.waitingTime}</h4>
+                    <p className="text-sm">{conversation.escalationReason}</p>
+                    <p className="text-sm">{conversation.aiSummary}</p>
+                    </div>
                 </div>
         }
    </>
