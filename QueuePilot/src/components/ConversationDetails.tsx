@@ -26,8 +26,24 @@ function ConversationDetails({ selectedConversation }: ConversationDetailsProps)
              <h4 className="text-sm">{selectedConversation?.waitingTime}</h4>
             <p className="text-gray-600">{selectedConversation?.escalationReason}</p>
             <p className="text-gray-600">{selectedConversation?.aiSummary}</p>
-
             </section>
+              <div>
+
+                {selectedConversation?.messages?.map((message) => (
+
+                    <div key={message.id} className="flex flex-col m-2 p-3 justify-center items-center">
+
+                        <p className="font-bold">{message.sender}</p>
+
+                        <p className="text-gray-600">{message.text}</p>
+
+                        <p className="text-sm text-gray-500">{message.timestamp}</p>
+
+                    </div>
+
+                ))}
+
+            </div>
         </>
     )
 }
