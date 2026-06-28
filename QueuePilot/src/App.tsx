@@ -11,7 +11,7 @@ function App() {
     <>
       <Header/>
     <Routes>
-      <Route path="/inbox" element={<Inbox />} />
+      <Route path="/" element={<Inbox />} />
     </Routes>
     </>
   )
