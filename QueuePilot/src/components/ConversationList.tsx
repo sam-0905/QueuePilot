@@ -11,7 +11,7 @@ const ConversationList = ({conversations, onSelectedConversation }: Conversation
   return (
       <>
       
-          <h1 className="text-2xl font-bold mb-4">Conversation List</h1>
+          <h1 className="text-2xl font-bold items-center align-middle mb-4">Conversation List</h1>
           {conversations.map((conversation) => (
            <ConversationCard   
            key={conversation.id}
