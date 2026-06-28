@@ -1,3 +1,4 @@
+import type { Conversation } from "../types/conversation";
 
 interface ConversationCardProps {  
     conversation: Conversation;
