@@ -1,4 +1,3 @@
-import React from 'react'
 import { conversations } from '../data/conversations'
 
 const ConversationList = () => {
