@@ -2,14 +2,15 @@ import type { Conversation } from "../types/conversation";
 
 interface ConversationCardProps {  
     conversation: Conversation;
+    onSelect?: (conversation: Conversation) => void;
 }
 
-const ConversationCard = ({ conversation }: ConversationCardProps) => {
+const ConversationCard = ({ conversation, onSelect }: ConversationCardProps) => {
+
   return (
     <>
     {
-                <div key={conversation.id} className="flex m-2 p-3 justify-center items-center">
-                      <h1 className="text-xl font-bold">Conversation Card</h1>
+                <div key={conversation.id} className="flex m-2 p-3 justify-center items-center" onClick={() => onSelect(conversation)}>
                     <div className="flex flex-col m-2 p-4 bg-blue-500 rounded-lg shadow-md ">
                     <h2 className="text-lg font-semibold">{conversation.customerName}</h2>
                     <h2 className="text-md">{conversation.status}</h2>
