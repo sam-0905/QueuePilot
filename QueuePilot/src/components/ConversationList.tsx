@@ -1,18 +1,20 @@
-import { conversations } from '../data/conversations'
+import ConversationCard from "./ConversationCard";
+import type { Conversation } from "../types/conversation";
 
-const ConversationList = () => {
+
+interface ConversationListProps {
+    conversations: Conversation[]
+}   
+
+const ConversationList = ({conversations }: ConversationListProps) => {
   return (
-    <>    <div>ConversationList</div>
-        {
-            conversations.map((conversation) => (
-                <div key={conversation.id}>
-                    <h2>{conversation.customerName}</h2>
-                    <h2>{conversation.status}</h2>
-                    <h3>{conversation.priority}</h3>
-                    <h4>{conversation.waitingTime}</h4>
-                </div>
-            ))  
-        }
+      <>
+          {conversations.map((conversation) => (
+           <ConversationCard   
+           key={conversation.id}
+           conversation={conversation}
+           />  
+           ))}
     </>
   )
 }
