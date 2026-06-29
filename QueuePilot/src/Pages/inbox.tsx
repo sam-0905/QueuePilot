@@ -19,7 +19,11 @@ function Inbox() {
 
 
     if(!filteredConversations || filteredConversations.length === 0) {
-       return <p className=" text-2xl font-bold m-3 p-5 items-center text-amber-800 border-2 h-20 bg-amber-300">No conversations found! 💬</p>
+       return (
+            <div className="flex items-center justify-center text-center">
+                <p className="  text-4xl font-bold m-3 mt-5 p-15  text-amber-800 border-2 h-20 bg-amber-300 w-100 h-100 [word-spacing:1rem]">🕵️ We searched everywhere... nothing found.</p>
+            </div>
+       )    
     }
 
     return (
