@@ -83,15 +83,13 @@ Selecting a conversation displays:
 - Instant filtering while typing
 - Empty state when no conversations are found
 
-Example:
-
-
-
+### Example:
+```
 Search: john
 
 Results:
 ✔ John Doe
-
+```
 
 ---
 
@@ -133,3 +131,45 @@ Try another search.
 - React Router DOM
 
 ---
+
+
+## ▶️ Run Locally
+
+Clone the repository
+
+```bash
+git clone <repository-url>
+
+Navigate to the project
+
+cd QueuePilot
+
+Install dependencies
+
+npm install
+
+Start development server
+
+npm run dev
+
+Open
+
+http://localhost:5173
+
+ ```
+
+# 🏗 Build
+- npm run build
+
+- Preview production build
+
+- npm run preview
+ 
+----
+
+
+# 👨‍💻 Author
+
+### Allan Sam
+
+#### Frontend Developer | React | TypeScript
