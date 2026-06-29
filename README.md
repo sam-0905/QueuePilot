@@ -1,6 +1,6 @@
 # QueuePilot
 
-# - A React + TypeScript application that simulates an AI-powered customer support inbox. The project demonstrates modern React concepts such as component-based architecture, state management, filtering, and responsive UI design.
+### - A React + TypeScript application that simulates an AI-powered customer support inbox. The project demonstrates modern React concepts such as component-based architecture, state management, filtering, and responsive UI design.
 
 ## 📌 Features Implemented 
 
@@ -15,6 +15,7 @@
 
 ## 📂 Folder Structure
 
+```
 src/
 │
 ├── components/
@@ -38,7 +39,7 @@ src/
 ├── App.tsx
 └── main.tsx
 
-
+```
 ---
 
 ## ✨ Implemented Features
