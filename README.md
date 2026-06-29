@@ -40,3 +40,96 @@ src/
 
 
 ---
+
+## ✨ Implemented Features
+
+### 📥 Inbox
+
+- Displays all customer conversations
+- Responsive two-column dashboard layout
+
+---
+
+### 💬 Conversation List
+
+- Displays:
+  - Customer Name
+  - Status
+  - Priority
+  - Waiting Time
+  - AI Summary
+  - Escalation Reason
+
+---
+
+### 📄 Conversation Details
+
+Selecting a conversation displays:
+
+- Customer information
+- Status
+- Priority
+- Waiting Time
+- Escalation Reason
+- AI Summary
+- Complete conversation messages
+
+---
+
+### 🔍 Live Search
+
+- Search conversations by customer name
+- Case-insensitive search
+- Instant filtering while typing
+- Empty state when no conversations are found
+
+Example:
+
+
+
+Search: john
+
+Results:
+✔ John Doe
+
+
+---
+
+### 📭 Empty State
+
+Displays a friendly message when no conversations match the search.
+
+Example:
+
+
+
+🔍 No matching conversations.
+Try another search.
+
+
+---
+
+## ⚛️ React Concepts Used
+
+- Functional Components
+- Props
+- useState
+- Conditional Rendering
+- List Rendering
+- Event Handling
+- State Lifting
+- Parent → Child Data Flow
+- Child → Parent Communication
+- TypeScript Interfaces
+
+---
+
+## 🛠 Technologies
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router DOM
+
+---
