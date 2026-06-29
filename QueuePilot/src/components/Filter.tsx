@@ -1,25 +1,25 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
-interface FilterProps {
-    filterStatus :string,
-    priorityFilter :string,
-    onFilterStatusChange : (status:string) => void;
-    onPriorityChanges : (priority : string) => void;
-}
+// interface FilterProps {
+//     filterStatus :string,
+//     priorityFilter :string,
+//     onFilterStatusChange : (status:string) => void;
+//     onPriorityChanges : (priority : string) => void;
+// }
 
-const Filter = ({filterStatus,priorityFilter,onFilterStatusChange,onPriorityChanges}: FilterProps) => {
+// const Filter = ({filterStatus,priorityFilter,onFilterStatusChange,onPriorityChanges}: FilterProps) => {
 
-  return (
-    <>
-    <form action="">
-        <option value="All">All</option>
-        <option value="open">open</option>
-        <option value="In progress">In progress</option>
-        <option value="Resolved">Resolved</option>
+//   return (
+//     <>
+//     <form action="">
+//         <option value="All">All</option>
+//         <option value="open">open</option>
+//         <option value="In progress">In progress</option>
+//         <option value="Resolved">Resolved</option>
 
-    </form>
-    </>
-  )
-}
+//     </form>
+//     </>
+//   )
+// }
 
-export default Filter;
+// export default Filter;

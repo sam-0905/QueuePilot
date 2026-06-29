@@ -8,8 +8,8 @@ function Inbox() {
 
     const [selectedConversation, setSelectedConversation] = useState<Conversation | null>(null);
     const [searchText, setSearchText] = useState("");
-    const [filterStatus, setFilterStatus] = useState("All");
-    const [priorityFilter , setPriorityFilter] = useState("All")
+    // const [filterStatus, setFilterStatus] = useState("All");
+    // const [priorityFilter , setPriorityFilter] = useState("All")
 
     const filteredConversations = conversations.filter((conversation) =>
         conversation.customerName.toLowerCase().includes(searchText.toLowerCase())
